@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tebak Angka</title>
+        <script src="vue.js"></script>
+        <style>
+            footer{
+                font-family: 'Libre Franklin', sans-serif;
+                color: rgb(12, 11, 11);
+            }
+            html {
+                font-family: sans-serif;
+            }
+            
+            body {
+                width: 50%;
+                max-width: 800px;
+                min-width: 480px;
+                margin: 0 auto;
+            }
+            
+            .lastResult {
+                color: white;
+                padding: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Bermain Tebak Angka</h1>
+    
+    <div class="form"> <label for="guessField">Tebaklah Angka 1-10 <strong>1-10</strong>: </label><input type="text" id="guessField" class="guessField"> <input type="submit" value="Pilih" class="guessSubmit"> </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+   <footer>
+    <p align="center">Avitiel Jief Junior Budiman | 180709608 | PAW B</p>
+    </footer>
+    </body>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                wanita: {
+                    nama: 'Avitiel Jief Junior Budiman',
+                    npm: 180709608,
+                    kelas: PAW B
+                },
+            },
+            methods: {
+                tambahUmur() {
+                    this.wanita.umur++;
+                },
+                kurangiUmur() {
+                    this.wanita.umur--;
+                }
+            },
+        });
+    </script>
+</html>
